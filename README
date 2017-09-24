@@ -1,5 +1,7 @@
-Luke Moore 204554415
-Lab 1
+Luke Moore 
+Simple Shell
+
+This program acts as a UNIX shell that can process commands and redirect file I/O requests.
 
 Limitations:
 
