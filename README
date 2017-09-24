@@ -1,0 +1,22 @@
+Luke Moore 204554415
+Lab 1
+
+Limitations:
+
+  An important note about this program:
+    If file descriptors are opened for I/O and a --command references them
+    correctly then they will be used. If a --command incorrectly references
+    a file descriptor number that has not shown up yet then an error is thrown
+    and the program terminates.
+
+    If no files are passed by the user then the command throws an error when issuing
+    a command due to no files being open for use. (This is an update from my
+    Lab 1a where I defaulted to stdin, stderr, and stdout.)
+
+
+Additional information:
+  My program parses input arguments using getopt_long.
+  When a --command option is entered, I extract the given information/args
+  for that given command by searching for the next string that contains a "--".
+  If there is one found then we know we can move on and execute the command
+  because we have received all of the arguments associated with the given command.
